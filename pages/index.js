@@ -71,7 +71,8 @@ export default function PaginaInicial() {
                 infosDoEvento.preventDefault();
                 console.log('Alguém submeteu o form');
                 roteamento.push('/chat');
-
+                //roteamento.push('/chat?username=' + username);
+                roteamento.push(`/chat?username=${username}`);
                 // window.location.href = '/chat';
               }}
                 styleSheet={{
