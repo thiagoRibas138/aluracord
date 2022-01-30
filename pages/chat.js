@@ -33,8 +33,8 @@ export default function ChatPage() {
       .then(({ data }) => {
         console.log('Dados da consulta:', data);
         // console.log('Dados da consulta:', data);
-        setListaDeMensagens(data); 
-        //setListaDeMensagens(data) = servidor quando comentado realizamos um "bug" no sistema para mexer manualmente.
+        //setListaDeMensagens(data); 
+        //setListaDeMensagens(data) == servidor
       });
 
     const subscription = escutaMensagensEmTempoReal((novaMensagem) => {
